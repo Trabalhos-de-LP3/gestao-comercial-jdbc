@@ -28,3 +28,21 @@ A confirmação e o cancelamento de venda rodam dentro de uma transação JDBC �
 (`TransactionManager.executar` → `setAutoCommit(false)` + `commit`/`rollback`).
 Teste de rollback (vender além do estoque): a operação falha e o estoque permanece
 inalterado — gravação da venda e baixa de estoque são atômicas (tudo ou nada).
+
+## Consulta por produto e regras de inativação
+
+Execução real adicional (base recriada com o seed) cobrindo a consulta de vendas por
+produto e as regras de cliente/produto inativo. Saída completa em
+[`evidencia-consulta-produto.txt`](evidencia-consulta-produto.txt).
+
+| Fluxo | Resultado |
+|-------|-----------|
+| Duas vendas confirmadas | #1 (Ana: Teclado×2 + Mouse×1 = R$ 680) e #2 (Bruno: Teclado×1 = R$ 250) |
+| **Consulta por produto** (Teclado, ID 1) | retorna **as vendas #1 e #2** (ambas contêm o produto) |
+| **Consulta por produto** (Monitor, ID 3) | `Nenhuma venda encontrada.` (não vendido) |
+| Regra: cliente inativo | após inativar o cliente, nova venda → `Erro: Cliente inativo não pode realizar compras.` |
+| Regra: produto inativo | após inativar o produto, adicioná-lo → `Erro: Produto inativo não pode ser vendido.` |
+
+A consulta por produto usa `SELECT DISTINCT v.* FROM venda v JOIN item_venda i
+ON i.venda_id = v.id WHERE i.produto_id = ?`, garantindo uma venda por linha mesmo com
+vários itens do mesmo produto.

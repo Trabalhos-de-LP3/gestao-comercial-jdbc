@@ -43,8 +43,9 @@ Os dados de exemplo já trazem clientes (IDs 1–3) e produtos (IDs 1–3) com e
 - Menu `3` → `2`: o estoque dos itens **voltou** ao valor anterior.
 
 ### 6. Consultas
-- Menu `5` (Consultas) → `1` (Venda por ID), `2` (por cliente), `3` (por status: ABERTA,
-  CONFIRMADA, CANCELADA, FATURADA), `4` (por período no formato `AAAA-MM-DD`).
+- Menu `5` (Consultas) → `1` (Venda por ID), `2` (por cliente), `3` (por produto — lista as
+  vendas que contêm o produto informado), `4` (por status: ABERTA, CONFIRMADA, CANCELADA,
+  FATURADA), `5` (por período no formato `AAAA-MM-DD`).
 
 ### 7. Regras de negócio (mostrar os bloqueios)
 - Vender quantidade maior que o estoque → "Estoque insuficiente para o produto ...".

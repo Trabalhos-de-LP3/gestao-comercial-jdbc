@@ -1,0 +1,138 @@
+SISTEMA DE GESTÃO COMERCIAL (JDBC)
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: ID do produto (0 para finalizar): Quantidade: Item adicionado. Total parcial: R$ 500.0
+ID do produto (0 para finalizar): Quantidade: Item adicionado. Total parcial: R$ 680.0
+ID do produto (0 para finalizar): Desconto (0 se não houver): Venda confirmada com ID 1 | Total líquido: R$ 680.0
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: ID do produto (0 para finalizar): Quantidade: Item adicionado. Total parcial: R$ 250.0
+ID do produto (0 para finalizar): Desconto (0 se não houver): Venda confirmada com ID 2 | Total líquido: R$ 250.0
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CONSULTAS ---
+1 - Venda por ID
+2 - Vendas por cliente
+3 - Vendas por produto
+4 - Vendas por status
+5 - Vendas por período
+0 - Voltar
+Opção: ID do produto: Venda #1 | Cliente: Ana Souza | Status: CONFIRMADA | Data: 2026-07-08T13:01:33
+  Teclado Mecanico | Qtd: 2 | Unit: R$ 250.0 | Subtotal: R$ 500.0
+  Mouse Gamer | Qtd: 1 | Unit: R$ 180.0 | Subtotal: R$ 180.0
+  Total Bruto: R$ 680.0 | Desconto: R$ 0.0 | Total Líquido: R$ 680.0
+------------------------
+Venda #2 | Cliente: Bruno Lima | Status: CONFIRMADA | Data: 2026-07-08T13:01:33
+  Teclado Mecanico | Qtd: 1 | Unit: R$ 250.0 | Subtotal: R$ 250.0
+  Total Bruto: R$ 250.0 | Desconto: R$ 0.0 | Total Líquido: R$ 250.0
+------------------------
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CONSULTAS ---
+1 - Venda por ID
+2 - Vendas por cliente
+3 - Vendas por produto
+4 - Vendas por status
+5 - Vendas por período
+0 - Voltar
+Opção: ID do produto: Nenhuma venda encontrada.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CLIENTES ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: ID do cliente: Cliente inativado.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: Erro: Cliente inativo não pode realizar compras.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- PRODUTOS ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: ID do produto: Produto inativado.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: ID do produto (0 para finalizar): Quantidade: Erro: Produto inativo não pode ser vendido.
+ID do produto (0 para finalizar): Venda sem itens, operação cancelada.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: Encerrando.
