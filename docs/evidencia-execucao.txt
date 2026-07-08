@@ -1,0 +1,244 @@
+SISTEMA DE GESTÃO COMERCIAL (JDBC)
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CLIENTES ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: Nome: CPF (000.000.000-00): E-mail: Telefone: Cliente cadastrado com ID 4.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CLIENTES ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: [1] Ana Souza | CPF: 111.111.111-11 | ATIVO
+[2] Bruno Lima | CPF: 222.222.222-22 | ATIVO
+[3] Carla Mendes | CPF: 333.333.333-33 | ATIVO
+[4] João Teste | CPF: 444.444.444-44 | ATIVO
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- PRODUTOS ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: Nome: Descrição: Preço de venda: Preço de custo: Categoria: Quantidade inicial em estoque: Quantidade mínima: Localização: Produto cadastrado com ID 4.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- PRODUTOS ---
+1 - Cadastrar
+2 - Listar todos
+3 - Listar ativos
+4 - Inativar
+5 - Ativar
+0 - Voltar
+Opção: [4] Cadeira Gamer | R$ 1200.0 | Moveis | ATIVO
+[3] Monitor 24" | R$ 900.0 | Monitores | ATIVO
+[2] Mouse Gamer | R$ 180.0 | Perifericos | ATIVO
+[1] Teclado Mecanico | R$ 250.0 | Perifericos | ATIVO
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- ESTOQUE ---
+1 - Registrar entrada
+2 - Listar todos
+3 - Listar abaixo do mínimo
+0 - Voltar
+Opção: ID do produto: Quantidade de entrada: Entrada registrada.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- ESTOQUE ---
+1 - Registrar entrada
+2 - Listar todos
+3 - Listar abaixo do mínimo
+0 - Voltar
+Opção: Estoque [Teclado Mecanico] | Disponível: 60 | Mínimo: 10
+Estoque [Mouse Gamer] | Disponível: 30 | Mínimo: 5
+Estoque [Monitor 24"] | Disponível: 15 | Mínimo: 3
+Estoque [Cadeira Gamer] | Disponível: 20 | Mínimo: 5
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: ID do produto (0 para finalizar): Quantidade: Item adicionado. Total parcial: R$ 750.0
+ID do produto (0 para finalizar): Quantidade: Item adicionado. Total parcial: R$ 1110.0
+ID do produto (0 para finalizar): Desconto (0 se não houver): Venda confirmada com ID 1 | Total líquido: R$ 1060.0
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CONSULTAS ---
+1 - Venda por ID
+2 - Vendas por cliente
+3 - Vendas por status
+4 - Vendas por período
+0 - Voltar
+Opção: ID da venda: Venda #1 | Cliente: Ana Souza | Status: CONFIRMADA | Data: 2026-06-28T18:38:16
+  Teclado Mecanico | Qtd: 3 | Unit: R$ 250.0 | Subtotal: R$ 750.0
+  Mouse Gamer | Qtd: 2 | Unit: R$ 180.0 | Subtotal: R$ 360.0
+  Total Bruto: R$ 1110.0 | Desconto: R$ 50.0 | Total Líquido: R$ 1060.0
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- ESTOQUE ---
+1 - Registrar entrada
+2 - Listar todos
+3 - Listar abaixo do mínimo
+0 - Voltar
+Opção: Estoque [Teclado Mecanico] | Disponível: 57 | Mínimo: 10
+Estoque [Mouse Gamer] | Disponível: 28 | Mínimo: 5
+Estoque [Monitor 24"] | Disponível: 15 | Mínimo: 3
+Estoque [Cadeira Gamer] | Disponível: 20 | Mínimo: 5
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CONSULTAS ---
+1 - Venda por ID
+2 - Vendas por cliente
+3 - Vendas por status
+4 - Vendas por período
+0 - Voltar
+Opção: ID do cliente: Venda #1 | Cliente: Ana Souza | Status: CONFIRMADA | Data: 2026-06-28T18:38:16
+  Teclado Mecanico | Qtd: 3 | Unit: R$ 250.0 | Subtotal: R$ 750.0
+  Mouse Gamer | Qtd: 2 | Unit: R$ 180.0 | Subtotal: R$ 360.0
+  Total Bruto: R$ 1110.0 | Desconto: R$ 50.0 | Total Líquido: R$ 1060.0
+------------------------
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID da venda: Venda cancelada e estoque estornado.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- ESTOQUE ---
+1 - Registrar entrada
+2 - Listar todos
+3 - Listar abaixo do mínimo
+0 - Voltar
+Opção: Estoque [Teclado Mecanico] | Disponível: 60 | Mínimo: 10
+Estoque [Mouse Gamer] | Disponível: 30 | Mínimo: 5
+Estoque [Monitor 24"] | Disponível: 15 | Mínimo: 3
+Estoque [Cadeira Gamer] | Disponível: 20 | Mínimo: 5
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- CONSULTAS ---
+1 - Venda por ID
+2 - Vendas por cliente
+3 - Vendas por status
+4 - Vendas por período
+0 - Voltar
+Opção: Status disponíveis: ABERTA, CONFIRMADA, CANCELADA, FATURADA
+Status: Venda #1 | Cliente: Ana Souza | Status: CANCELADA | Data: 2026-06-28T18:38:16
+  Teclado Mecanico | Qtd: 3 | Unit: R$ 250.0 | Subtotal: R$ 750.0
+  Mouse Gamer | Qtd: 2 | Unit: R$ 180.0 | Subtotal: R$ 360.0
+  Total Bruto: R$ 1110.0 | Desconto: R$ 50.0 | Total Líquido: R$ 1060.0
+------------------------
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: --- VENDAS ---
+1 - Nova venda
+2 - Cancelar venda
+0 - Voltar
+Opção: ID do cliente: ID do produto (0 para finalizar): Quantidade: Erro: Estoque insuficiente para o produto Teclado Mecanico
+ID do produto (0 para finalizar): Venda sem itens, operação cancelada.
+
+=== MENU PRINCIPAL ===
+1 - Clientes
+2 - Produtos
+3 - Estoque
+4 - Vendas
+5 - Consultas
+0 - Sair
+Opção: Encerrando.
