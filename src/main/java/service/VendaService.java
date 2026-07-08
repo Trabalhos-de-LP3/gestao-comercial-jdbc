@@ -75,6 +75,10 @@ public class VendaService {
         return vendaDAO.listarPorCliente(clienteId);
     }
 
+    public List<Venda> listarPorProduto(int produtoId) {
+        return vendaDAO.listarPorProduto(produtoId);
+    }
+
     public List<Venda> listarPorPeriodo(LocalDateTime inicio, LocalDateTime fim) {
         return vendaDAO.listarPorPeriodo(inicio, fim);
     }

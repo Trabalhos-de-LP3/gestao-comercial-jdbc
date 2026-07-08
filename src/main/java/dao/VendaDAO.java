@@ -16,6 +16,8 @@ public interface VendaDAO {
 
     List<Venda> listarPorCliente(int clienteId);
 
+    List<Venda> listarPorProduto(int produtoId);
+
     List<Venda> listarPorPeriodo(LocalDateTime inicio, LocalDateTime fim);
 
     List<Venda> listarPorStatus(StatusVenda status);

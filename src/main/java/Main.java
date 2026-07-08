@@ -17,7 +17,6 @@ import service.ProdutoService;
 import service.VendaService;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
 
@@ -226,15 +225,17 @@ public class Main {
         System.out.println("--- CONSULTAS ---");
         System.out.println("1 - Venda por ID");
         System.out.println("2 - Vendas por cliente");
-        System.out.println("3 - Vendas por status");
-        System.out.println("4 - Vendas por período");
+        System.out.println("3 - Vendas por produto");
+        System.out.println("4 - Vendas por status");
+        System.out.println("5 - Vendas por período");
         System.out.println("0 - Voltar");
         int opcao = lerInteiro("Opção: ");
         switch (opcao) {
             case 1 -> System.out.println(vendaService.buscarPorId(lerInteiro("ID da venda: ")));
             case 2 -> imprimirVendas(vendaService.listarPorCliente(lerInteiro("ID do cliente: ")));
-            case 3 -> imprimirVendas(vendaService.listarPorStatus(lerStatus()));
-            case 4 -> {
+            case 3 -> imprimirVendas(vendaService.listarPorProduto(lerInteiro("ID do produto: ")));
+            case 4 -> imprimirVendas(vendaService.listarPorStatus(lerStatus()));
+            case 5 -> {
                 LocalDate inicio = LocalDate.parse(lerTexto("Data inicial (AAAA-MM-DD): "));
                 LocalDate fim = LocalDate.parse(lerTexto("Data final (AAAA-MM-DD): "));
                 imprimirVendas(vendaService.listarPorPeriodo(

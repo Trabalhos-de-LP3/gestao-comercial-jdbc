@@ -128,6 +128,22 @@ public class VendaDAOJdbc implements VendaDAO {
     }
 
     @Override
+    public List<Venda> listarPorProduto(int produtoId) {
+        String sql = "SELECT DISTINCT v.* FROM venda v "
+                + "JOIN item_venda i ON i.venda_id = v.id "
+                + "WHERE i.produto_id = ? ORDER BY v.data_venda DESC";
+        Connection conexao = TransactionManager.getConnection();
+        try (PreparedStatement ps = conexao.prepareStatement(sql)) {
+            ps.setInt(1, produtoId);
+            return mapearLista(ps);
+        } catch (SQLException e) {
+            throw new NegocioException("Erro ao listar vendas por produto.", e);
+        } finally {
+            TransactionManager.liberar(conexao);
+        }
+    }
+
+    @Override
     public List<Venda> listarPorPeriodo(LocalDateTime inicio, LocalDateTime fim) {
         String sql = "SELECT * FROM venda WHERE data_venda BETWEEN ? AND ? ORDER BY data_venda";
         Connection conexao = TransactionManager.getConnection();
